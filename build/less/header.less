@@ -1,0 +1,36 @@
+.header {
+	border-bottom: 2px solid darken(@white, 89%);
+	background: @white;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top:0;
+	width: 100%;
+	&-lvl-1 {
+		padding: 5px 0;
+		.ship-attantion {
+			font-size: 16px;
+			color: #727376;
+			padding-top: 5px;
+			p {
+				margin-bottom: 0;
+				padding-right: 80px;
+			}
+		}
+	}
+	&-lvl-2 {
+		padding: 5px 0 15px;
+		.trash {
+			text-transform: lowercase;
+			display: flex;
+			i,img {
+				margin-right: 5px;
+			}
+		}
+	}
+	.logo {
+		margin-bottom: -@offset-header;
+		margin-top: 27px;
+	}
+	margin-bottom: @offset-header - 30px;
+}
