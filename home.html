@@ -8,6 +8,7 @@
 	<meta http-equiv="content-language" content="ru-RU">
 	<meta name="robots" content="index, follow">
 	<link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='assets/css/bootstrap_col_15.css' rel='stylesheet' type='text/css'>
 	<link href='assets/css/style.min.css' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -22,7 +23,7 @@
 	<div class="sticky-page">
 		<section class="header">
 			<section class="header-lvl-1">
-				<div class="container">
+				<div class="container hidden-xs">
 					<div class="row">
 						<div class="col-xs-12 col-md-2 col-sm-3">
 							<form action="">
@@ -37,8 +38,23 @@
 						</div>
 					</div>
 				</div>
+				<div class="container visible-xs">
+					<div class="row">
+						<div class="col-xs-8 col-md-2 col-sm-3">
+							<a href="#"><img src="assets/img/logo-rwd.png" alt=""></a>
+						</div>
+						<div class="col-xs-4 col-md-10 col-sm-9">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section class="header-lvl-2">
+			<section class="header-lvl-2 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-5 col-sm-5">
@@ -52,7 +68,7 @@
 								</nav>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-2 col-sm-2 text-center">
+						<div class="col-xs-12 col-md-2 col-sm-2 text-center hidden-xs">
 							<div class="logo">
 								<a href="#"><img src="assets/img/logo.png" alt=""></a>
 							</div>
@@ -83,84 +99,199 @@
 				</div>
 			</section>
 		</section>
-		<section class="content">
+		
+		<section class="content offset-top">
 			<div class="container">
+				<div class="slider-main">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+						    <div data-item="slider" class="owl-carousel owl-theme">
+							      <div class="item"><img src="assets/img/slide.jpg" alt="Owl Image"></div>
+							      <div class="item"><img src="assets/img/slide.jpg" alt="Owl Image"></div>
+							      <div class="item"><img src="assets/img/slide.jpg" alt="Owl Image"></div>
+						    </div>
+						    <!-- NAV SLIDER -->
+						    <div class="col-xs-12 col-md-10 col-md-offset-1 col-sm-12">
+						    	<div class="col-xs-12 col-md-6 col-sm-6">
+						    		<h2 class="slider-titile">Slider Name</h2>
+						    	</div>
+						    	<div class="col-xs-12 col-md-6 col-sm-6">
+				                    <div class="slider-navigation my-flex">
+				                        <div class="main-dots">
+					                        <div class="owl-dot">
+					                        	<span>01</span>
+					                        </div>
+					                        <div class="owl-dot">
+					                        	<span>02</span>
+					                        </div>
+					                        <div class="owl-dot">
+					                        	<span>03</span>
+					                        </div>
+				                        </div>
+				                    </div>
+				                 </div>  
+			                </div>
+						    <!-- END NAV SLIDE -->
+						</div>
+
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="bread-crumbs">
-							<ul>
-								<li><a href="">Shop</a></li>
-								<li><a href="">Hair Care</a></li>
-								<li><a href="">Styling</a></li>
-								<li><a href="">Sea Salt Spray</a></li>
-							</ul>
+						<hr class="side-offset"> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h4 class="text-center">Top Sellers</h4>
+						
+					</div>
+				</div>
+				<!-- CONTENT MAIN -->
+				<!--catalog list-->
+				<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="col15-md-3 col15-sm-3 col-xs-12">
+						<div class="item-catalog with-bage text-center">
+							<div class="item-catalog-preview">
+								<a href="#"><img src="assets/img/item-catalog.jpg" alt=""></a>
+								<a href="#" class="feedback-me"><p>Please contact me when this product is available</p></a>
+							</div>
+							<div class="item-catalog-info">
+								<p class="item-name">Curtis Rosemary Hair Shine Serum</p>
+								<p class="item-price">$999.999</p>
+							</div>
+						</div>
+					</div>
+					<div class="col15-md-3 col15-sm-3 col-xs-12">
+						<div class="item-catalog with-bage text-center">
+							<div class="item-catalog-preview">
+								
+								<a href="#"><img src="assets/img/item-catalog.jpg" alt=""></a>
+								<a href="#" class="feedback-me"><p>Please contact me when this product is available</p></a>
+							</div>
+							<div class="item-catalog-info">
+								<p class="item-name">Curtis Rosemary Hair Shine Serum</p>
+								<p class="item-price">$999.999</p>
+							</div>
+						</div>
+					</div>
+					<div class="col15-md-3 col15-sm-3 col-xs-12">
+						<div class="item-catalog with-bage text-center">
+							<div class="item-catalog-preview">
+								<a href="#"><img src="assets/img/item-catalog.jpg" alt=""></a>
+								<a href="#" class="feedback-me"><p>Please contact me when this product is available</p></a>
+							</div>
+							<div class="item-catalog-info">
+								<p class="item-name">Curtis Rosemary Hair Shine Serum</p>
+								<p class="item-price">$999.999</p>
+							</div>
+						</div>
+					</div>
+					<div class="col15-md-3 col15-sm-3 col-xs-12">
+						<div class="item-catalog with-bage text-center">
+							<div class="item-catalog-preview">
+								
+								<a href="#"><img src="assets/img/item-catalog.jpg" alt=""></a>
+								<a href="#" class="feedback-me"><p>Please contact me when this product is available</p></a>
+							</div>
+							<div class="item-catalog-info">
+								<p class="item-name">Curtis Rosemary Hair Shine Serum</p>
+								<p class="item-price">$999.999</p>
+							</div>
+						</div>
+					</div>
+					<div class="col15-md-3 col15-sm-3 col-xs-12">
+						<div class="item-catalog with-bage text-center">
+							<div class="item-catalog-preview">
+								
+								<a href="#"><img src="assets/img/item-catalog.jpg" alt=""></a>
+								<a href="#" class="feedback-me"><p>Please contact me when this product is available</p></a>
+							</div>
+							<div class="item-catalog-info">
+								<p class="item-name">Curtis Rosemary Hair Shine Serum</p>
+								<p class="item-price">$999.999</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!--card START-->
+				</div>
+				<!--catalog list END-->
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="product">
-							<div class="row">
-								<div class="col-md-6 col-sm-6 col-xs-12">
-									<div class="product-offset-right">
-										<a href="#" ><img class="full-width" src="assets/img/item-catalog-big.jpg" alt=""></a>
+						<hr class="side-offset"> 
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-md-5 col-sm-6">
+							<div class="articles">
+								<div class="articles-image">
+									<img src="assets/img/article.jpg" alt="" class="full-width">
+								</div>
+								<h4 class="text-center">Top Sellers</h4>
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-5 col-md-offset-2 col-sm-6">
+							<div class="articles">
+								<div class="articles-image">
+									<img src="assets/img/article.jpg" alt="" class="full-width">
+								</div>
+								<h4 class="text-center">Top Sellers</h4>
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+				</div>
+				<div class="row">
+					<div class="recently-items">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="row">
+									<div class="col-md-9 col-sm-9 col-xs-12">
+										<img src="assets/img/fallow.jpg" class="full-width">
 									</div>	
 								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12">
-									<div class="product-offset-left">
-										<div class="product-content">
-											<h1 class="product-title">Sea Slat Spary</h1>
-											<p class="product-price">23 USD</p>
-											<hr class="line">
-											<p>
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
-											</p>
-											<hr class="line line-s"> 
-											<hr class="line line-l">
-											<h3>Active Ingradients</h3>
-											<p class="strong">
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-											</p>
-											<hr class="line line-l">
-											<hr class="line line-s"> 
-											<h3>Ingradients</h3>
-											<p class="strong">
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-											Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.  
-											</p>
-										</div>
-											
-									<div class="product-options">	
-										<button type="button" class="btn btn-default btn-cart">
-											<span>ADD TO CART</span>
-										</button>
-
-										<div class="links-bottom">
-											<ul>
-												<li><a href="">Shop</a></li>
-												<li><a href="">Hair Care</a></li>
-												<li><a href="">Styling</a></li>
-												<li><a href="">Sea Salt Spray</a></li>
-											</ul>
-										</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="row my-flex center">
+									<div class="col-md-9 col-sm-9 col-xs-12">
+										<img src="assets/img/fallow.jpg" class="full-width">
 									</div>	
-									</div>
 								</div>
 							</div>
 
-						</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="row my-flex right">
+									<div class="col-md-9 col-sm-9 col-xs-12">
+										<img src="assets/img/fallow.jpg" class="full-width">
+									</div>	
+								</div>
+							</div>
+					
 					</div>
-				</div>
-				<!--card END-->
+				</div>	
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<hr class="line-bold">
-						<h4 class="text-center">You Might Also Like</h4>
+						<hr class="side-offset"> 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h4 class="text-center">Top Sellers</h4>
+						
 					</div>
 				</div>
 				<div class="row">
@@ -226,8 +357,10 @@
 					<!-- END ALSO ITEMS-->
 					</div>	
 				</div>
+				<!-- CONTENT MAIN END-->
 			</div>
 		</section>
+		
 	</div>
 	<section class="footer">
 		<section class="footer-lvl-1">

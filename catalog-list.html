@@ -23,7 +23,7 @@
 	<div class="sticky-page">
 		<section class="header">
 			<section class="header-lvl-1">
-				<div class="container">
+				<div class="container hidden-xs">
 					<div class="row">
 						<div class="col-xs-12 col-md-2 col-sm-3">
 							<form action="">
@@ -38,8 +38,23 @@
 						</div>
 					</div>
 				</div>
+				<div class="container visible-xs">
+					<div class="row">
+						<div class="col-xs-8 col-md-2 col-sm-3">
+							<a href="#"><img src="assets/img/logo-rwd.png" alt=""></a>
+						</div>
+						<div class="col-xs-4 col-md-10 col-sm-9">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section class="header-lvl-2">
+			<section class="header-lvl-2 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-5 col-sm-5">
@@ -53,7 +68,7 @@
 								</nav>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-2 col-sm-2 text-center">
+						<div class="col-xs-12 col-md-2 col-sm-2 text-center hidden-xs">
 							<div class="logo">
 								<a href="#"><img src="assets/img/logo.png" alt=""></a>
 							</div>
@@ -84,12 +99,12 @@
 				</div>
 			</section>
 		</section>
-
+		
 		<section class="content">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="bread-crumbs">
+						<div class="bread-crumbs padding-top">
 							<ul>
 								<li><a href="">Shop</a></li>
 								<li><a href="">Hair Care</a></li>
