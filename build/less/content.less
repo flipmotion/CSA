@@ -2,5 +2,132 @@
 	&.offset-top {
 		margin-top: -90px;
 	}
-	
+}
+.product{
+	padding-top:100px;
+	@offset-product-content: 5px;
+	.product-offset-left{
+		padding-left: 60px;
+	}
+	.product-offset-right{
+		padding-right: 35px; 
+	}
+	.product-content{
+		border: solid 1px #c3c2c3;
+		position: relative;
+		z-index: 1;
+		padding: 5px 10px;
+			&:before{ 
+				content: "";
+			    display: block;
+			    position: absolute;
+			    border: solid 2px #959696;
+			    z-index: 2;
+			    top:-@offset-product-content;
+			    bottom: -@offset-product-content;
+			    left: -@offset-product-content;
+			    right: -@offset-product-content;
+			}
+		h3{
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 0;
+		}
+		.strong{
+			font-weight: 600;
+		}
+		.product {
+			&-title{
+				text-align: left;
+				font-size: 21px;
+				margin-bottom: 0;
+				line-height: 1;
+			}
+			&-price{
+				text-align: left;
+				font-size: 21px;
+				line-height: 1;
+			}
+		}
+		.line {
+			border: 1px solid #757273;
+			&.line {
+				&-s{
+					border-top-color: #cccbcc;
+					border-bottom-color: #908e8e;
+					margin-top: 0;
+					margin-bottom: 2px;
+				}
+				&-l{ 
+					border-top: 1px solid #c5c4c4;
+					border-bottom: 1px solid #e3e3e3;
+					margin-top: 0;
+					margin-bottom: 2px;
+				}
+			}	
+		}
+	}
+
+	&-options{
+		margin-left: -@offset-product-content;
+		margin-right: -@offset-product-content; 
+		.btn-cart {
+			display: block;
+			font-size: 24px;
+			width: 100%;
+			margin: 20px 0px;
+			background-color: darken(@white, 10%); ;
+			border-color: darken(@white, 30%); 
+			span{
+				color: darken(@white, 0%); 
+				text-shadow: 1px 1px 2px #b4b4b4, 0 0 1em #d4d4d4;
+			}
+			
+		}
+
+		.links-bottom {
+			ul{	
+				padding:0;
+				margin:0;
+				margin-bottom: 0px;
+				text-align: center;
+				li{
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 21px;
+					a {
+						color: #838587;
+						text-decoration: none;
+					}
+					&:last-child {
+						&:after {
+							content: none;
+						}
+					}
+					&:after {
+						content: '|';
+						display: inline-block;
+						vertical-align: middle;
+						margin: -2px 5px 0;
+						color: #838587;
+					}
+
+				}
+
+			}
+		}
+
+
+	}
+}
+.recently-items{
+	margin-top: 30px;
+}
+.articles{
+	p{
+		text-align: center;
+		font-size: 16px;
+		font-weight: 600;
+	}
 }

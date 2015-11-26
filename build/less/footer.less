@@ -1,5 +1,107 @@
 .footer {
-	&-lvl-1 {
-		
+	background: #b5b5b6;
+	border-top: 1px solid #000;
+	color: #fff;
+	font-size: 16px;
+	hr {
+		border-color: #fff;
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-size: 21px;
+		margin-top: 0;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		a {
+			color: rgba(255,255,255,.7);
+			.clear-links;
+			display: inline-block;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		p {
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.made-by,
+	.copy {
+		color: rgba(255,255,255,.7);
+		a {
+			color:#fff;
+			.clear-links;
+		}
+	}
+	.copy {
+		margin-bottom: 0;
+	}
+	.social {
+		display: flex;
+		margin-bottom: 10px;
+		&>div {
+			&:last-child {
+				.holder {
+					//margin-left:0;
+					margin-right:0;
+				}
+			}
+			&:first-child {
+				.holder {
+					margin-left:0;
+					//margin-right:0;
+				}
+			}
+		}
+		.holder {
+			width: 35px;
+			height: 35px;
+			background: #fff;
+			border-radius: 50%;
+			margin: 5px;
+		}
+	}
+	.subscribe {
+		padding-right: 120px;
+		hr {
+			margin-right: -120px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+		}
+		.dropdown-menu {
+			right: 0;
+			left: 0;
+			border-radius: 0;
+			margin-top: 0;
+			background: rgba(255,255,255,.3);
+			border-color: #fff;
+			margin-top: -1px;
+			min-width: auto;
+			a {
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+		.dropdown {
+			display: table;
+			margin-right: 0;
+			margin-left: auto;
+			.btn {
+				border-radius: 0;
+				padding: 10px 25px 8px;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #fff;
+				background: 0 0;
+				border: 1px solid #ffffff;
+				.caret {
+					border-width: 6px;
+					margin-left: 10px;
+				}
+			}
+		}
 	}
 }

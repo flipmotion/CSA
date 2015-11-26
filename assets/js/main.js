@@ -1,4 +1,18 @@
 $(document).ready(function() {
+	var owl = $('[data-item="slider"]');
+		owl.owlCarousel({
+		loop:true,
+		margin:0,
+		nav:false,
+		dots:false,
+		items:1,
+		dots: true,
+        navContainer: '.main-navigation',
+        dotsContainer: '.main-dots',
+        navSpeed: 500,
+        dotsSpeed: 500,
+        dots: true
+	});
 	// var owl = $('[data-item="slider"]');
 	// 	$('[data-item="slider"]').owlCarousel({
 	// 	loop:true,
