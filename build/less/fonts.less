@@ -1,11 +1,51 @@
-// fonts
-// @font-face {
-// 	font-family: 'sr';
-// 	src: local('sr'),
-// 	url('../fonts/SourceSansPro-Regular.otf') format('truetype');
-// 	font-weight:400;
-// 	font-style: normal;
-// }
+//fonts
+/* first for IE 4–8 */
+@font-face {
+	font-family: 'sofiathin';
+	src:url(../fonts/sofia_thin.otf) format("truetype"), 
+		url(../fonts/sofia_thinWeb.eot) format("truetype"), 
+		url(../fonts/sofia_thinWeb.woff) format("opentype");
+		font-weight: 100;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'sofiathin';
+	src:url(../fonts/sofia_extralight_cond.otf) format("truetype"), 
+		url(../fonts/sofia_extralight_condWeb.eot) format("truetype"), 
+		url(../fonts/sofia_extralight_condWeb.woff) format("opentype");
+		font-weight: 300;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'forum';
+	src:url(../fonts/FOLF_.otf) format("truetype"), 
+		url(../fonts/FOLF.eot) format("truetype"), 
+		url(../fonts/FOLF.woff) format("opentype");
+		font-weight: 400;
+		font-style: normal;
+}
+@sf: 'sofiathin';
+@fr: 'forum';
+.fr {
+	font-family: @fr, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.sr {
+	font-family: @sf, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+.src {
+	font-family: @sf, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
 h4 {
 	font-size: 28px;
+	.fr;
+}
+p {
+	.sr;
+	font-size: 16px;
 }

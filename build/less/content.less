@@ -3,6 +3,48 @@
 		margin-top: -40px;
 	}
 }
+.all-center {
+	align-items: center;
+}
+.slider {
+	&-titile {
+		.sr;
+		color: #acadaf;
+		margin: 18px 0 0;
+	}
+	&-text {
+		padding: 0 25%;
+		p {
+			font-size: 18px;
+		}
+		h4 {
+			font-size: 36px;
+		}
+	}
+	&-navigation {
+		margin-top:0;
+		justify-content: flex-end;
+		margin-top: 20px;
+		.sr;
+		.owl-dot {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 21px;
+			cursor: pointer;
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+			&:after {
+				content: '|';
+				display: inline-block;
+				vertical-align: middle;
+				margin: -6px 5px 0;
+			}
+		}
+	}
+}
 .product{
 	@offset-product-content: 5px;
 	.product-offset-left{
@@ -16,6 +58,10 @@
 		position: relative;
 		z-index: 1;
 		padding: 5px 10px;
+		.sr;
+		p {
+			font-size: 16px;
+		}
 			&:before{ 
 				content: "";
 			    display: block;
@@ -29,9 +75,10 @@
 			}
 		h3{
 			text-transform: uppercase;
-			font-size: 16px;
+			font-size: 21px;
 			font-weight: 600;
 			line-height: 0;
+			.fr;
 		}
 		.strong{
 			font-weight: 600;
@@ -39,13 +86,15 @@
 		.product {
 			&-title{
 				text-align: left;
-				font-size: 21px;
+				font-size: 26px;
 				margin-bottom: 0;
 				line-height: 1;
+				.sr;
 			}
 			&-price{
+				.sr;
 				text-align: left;
-				font-size: 21px;
+				font-size: 26px;
 				line-height: 1;
 			}
 		}
@@ -76,8 +125,12 @@
 			font-size: 24px;
 			width: 100%;
 			margin: 20px 0px;
-			background-color: darken(@white, 10%); ;
+			background-color: darken(@white, 25%); ;
 			border-color: darken(@white, 30%); 
+			.fr;
+			&:hover,&:focus {
+				background: #000;
+			}
 			span{
 				color: darken(@white, 0%); 
 				text-shadow: 1px 1px 2px #b4b4b4, 0 0 1em #d4d4d4;
@@ -96,6 +149,7 @@
 					vertical-align: middle;
 					font-size: 21px;
 					a {
+						.sr;
 						color: #838587;
 						text-decoration: none;
 					}
@@ -111,13 +165,9 @@
 						margin: -5px 4px 0 8px;
 						color: #838587;
 					}
-
 				}
-
 			}
 		}
-
-
 	}
 }
 .recently-items{
@@ -125,8 +175,9 @@
 }
 .articles{
 	p{
+		.sr;
 		text-align: center;
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 600;
 	}
 }
@@ -134,12 +185,21 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	&:after {
-		content: '................................................................................................................................................';
-	}
+	margin-left: -5px;
+	margin-right: -5px;
 	p {
 		display: table;
+		padding: 0 5px;
 		background: #fff;
 	}
-	
+}
+.dot-offset {
+	margin-top: -32px;
+	margin-bottom: 8px;
+	p {
+		font-size: 21px;
+		line-height: 1;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
 }
