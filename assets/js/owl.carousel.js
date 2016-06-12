@@ -481,7 +481,7 @@
 	};
 
 	/**
-	 * Updates option logic if necessery.
+	 * Updates option logic if necessary.
 	 * @protected
 	 */
 	Owl.prototype.optionsLogic = function() {
@@ -667,7 +667,7 @@
 	};
 
 	/**
-	 * Checks for touch/mouse drag options and add necessery event handlers.
+	 * Checks for touch/mouse drag options and add necessary event handlers.
 	 * @protected
 	 */
 	Owl.prototype.internalEvents = function() {
